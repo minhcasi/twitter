@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TweetsViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:TweetsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tweets">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static User.currentUser.setter:User.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TwitterClient.(openURL(TwitterClient) -&gt; (NSURL) -&gt; ()).(closure #1).(closure #1):TwitterClient.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
