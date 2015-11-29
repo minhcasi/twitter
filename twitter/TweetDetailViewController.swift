@@ -23,6 +23,7 @@ class TweetDetailViewController: UIViewController {
     @IBOutlet weak var retweetButton: UIButton!
     @IBOutlet weak var replyText: UITextField!
     
+    @IBOutlet weak var screenNameLabel: UILabel!
     var tweet: Tweet!
     
     func initData() {
@@ -35,6 +36,10 @@ class TweetDetailViewController: UIViewController {
         
         numberOfRetweet.text = tweet.retweetCount > 0 ? "\(tweet.retweetCount!)" : ""
         numberOfLike.text = tweet.favoriteCount > 0 ? "\(tweet.favoriteCount!)" : ""
+        
+        if let screenName = tweet.user?.screenName {
+            screenNameLabel.text = "@\(screenName)"
+        }
         
         if tweet.favorited {
             numberOfLike.textColor = Tools.likeColor
@@ -72,7 +77,7 @@ class TweetDetailViewController: UIViewController {
     }
     
     @IBAction func likeAction(sender: UIButton) {
-        Tools.like(tweet, button: sender, countLabel: numberOfRetweet, isLargeIcon: true)
+        Tools.like(tweet, button: sender, countLabel: numberOfLike, isLargeIcon: true)
     }
     
     @IBAction func replyAction(sender: UIButton) {

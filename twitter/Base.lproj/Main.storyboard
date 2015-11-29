@@ -261,6 +261,7 @@ here </string>
                                             <outlet property="retweetButton" destination="t4F-tc-Hq6" id="Ako-Sk-D4B"/>
                                             <outlet property="retweetHeaderLabel" destination="PDy-D0-kXP" id="pxB-io-xaO"/>
                                             <outlet property="retweetIcon" destination="jlL-ot-JyT" id="g3h-Fd-q6B"/>
+                                            <outlet property="screenNameLabel" destination="JZF-mb-bqU" id="nXG-b0-vV0"/>
                                             <outlet property="timeLabel" destination="wQf-ps-S3S" id="GnE-Lq-7fm"/>
                                             <outlet property="tweetNumberLabel" destination="wXu-nz-S2U" id="4AA-YO-zle"/>
                                             <outlet property="usernameLabel" destination="JZF-mb-bqU" id="h1s-kO-QqD"/>
@@ -549,6 +550,7 @@ here </string>
                         <outlet property="profileImage" destination="t6t-U2-lc8" id="hqz-R1-gMr"/>
                         <outlet property="replyText" destination="n8a-Jy-or2" id="UF0-c7-VlT"/>
                         <outlet property="retweetButton" destination="2EO-xk-O4G" id="lbr-Xr-aMD"/>
+                        <outlet property="screenNameLabel" destination="tix-S3-HZe" id="CCE-Bw-f8s"/>
                         <outlet property="starButton" destination="lbk-Ze-CYh" id="iD9-p8-SSY"/>
                         <outlet property="usernameLabel" destination="tix-S3-HZe" id="Rzx-zi-3xa"/>
                     </connections>

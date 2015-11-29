@@ -28,6 +28,7 @@ class TweetCell: UITableViewCell {
     @IBOutlet weak var retweetIcon: UIImageView!
     @IBOutlet weak var retweetHeaderLabel: UILabel!
    
+    @IBOutlet weak var screenNameLabel: UILabel!
     
     @IBOutlet weak var profileTopConstraint: NSLayoutConstraint!
    
@@ -56,6 +57,9 @@ class TweetCell: UITableViewCell {
                 retweetButton.setImage(UIImage(named: "retweet"), forState: .Normal)
             }
             
+            if let screenName = tweet.user?.screenName {
+                screenNameLabel.text = "@\(screenName)"
+            }
             
             self.retweetIcon.hidden = false
             if tweet.retweet != nil {
